@@ -38,7 +38,7 @@ const DriverStandings = () => {
                                 <h4 className='col-1' id={'result-wins'}>Wins</h4>
                                 <h4 className='col-1' id={'result-points'}>Points</h4>
                             </div>
-                            {data.DriverStandings.filter((result, indx) => indx < 10).map(
+                            {data.DriverStandings.filter((r, indx) => indx < 10).map(
                                 (result) => 
                                 <>
                                     <div className={'row driverStanding d-flex flex-nowrap'} id={'standing-' + result.position}>

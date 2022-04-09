@@ -80,7 +80,7 @@ function Schedule() {
                                             </Col>
                                             <Col md={4} id="track-image">
                                                 <img
-                                                src={`./assets/track-images/${race.Circuit.Location.locality}.png`}
+                                                src={`./track-images/${race.Circuit.Location.locality}.png`}
                                                 className="img-fluid"
                                                 alt={race.Circuit.Location.locality}
                                                 />

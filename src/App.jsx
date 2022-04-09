@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import {
-    BrowserRouter,
     Routes,
     Route,
     Link,
@@ -43,7 +42,7 @@ function App() {
 
 
     return (
-        <BrowserRouter>
+        <>
             <div className='navbar' id='navbar-main'>
                 <div className='container'>
                     <div className='navbar-title'>
@@ -87,7 +86,7 @@ function App() {
                     <p><a href='https://formula1.com/' target={'_blank'}>track images from F1</a></p>
                 </span>
             </div>
-        </BrowserRouter>
+        </>
     )
 }
 

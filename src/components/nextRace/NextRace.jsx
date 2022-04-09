@@ -42,7 +42,7 @@ const NextRace = () => {
                         <>
                             <div className="row">
                                 <div className="col-4" id='next-track-image'>
-                                    <img src={`./assets/track-images/${nextRace.Circuit.Location.locality}.png`} className="img-fluid" alt={nextRace.Circuit.circuitName} />
+                                    <img src={`./track-images/${nextRace.Circuit.Location.locality}.png`} className="img-fluid" alt={nextRace.Circuit.circuitName} />
                                 </div>
                                 <div className="col d-flex">
                                     <div className="card-block text-center m-auto" id='countdown-container'>
