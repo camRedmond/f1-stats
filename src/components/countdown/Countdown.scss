@@ -1,0 +1,67 @@
+#countdown {
+    background-color: var(--font-color);
+    justify-content: space-evenly;
+    // font-size: calc(1em + 1vw);
+    padding: 0.5vmin;
+    margin: 0.5vmin;
+
+    color: var(--bg-color);
+    border-radius: 0.5rem;
+
+    p {
+        margin: 0;
+    }
+    
+    #num {
+        font-size: calc(0.65rem + 0.55vw);
+        font-weight: bolder;
+    }
+    #info {
+        font-size: smaller !important;
+    }
+}
+
+.countdown-info {
+    p {
+        margin: 0;
+    }
+    h4 {
+        font-size: calc(1.3em + 0.75vw);
+        margin: 0;
+        font-weight: bold;
+    }
+    h6 {
+        font-size: calc(0.55em + 0.65vw);
+        margin: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    #countdown {
+        width: 80%;
+        margin: auto;
+
+        #num {
+            font-size: calc(0.75rem + 0.6vw);
+        }
+
+        #info {
+            font-size: x-small !important;
+        }
+    }
+
+    .countdown-info {
+        h4 {
+            font-size: calc(1.2rem + 0.55vw);
+        }
+        h6 {
+            font-size: calc(0.75rem + 0.35vw);
+        }
+    }
+}
+
+@media (min-width: 1190px) {
+    #race-date {
+        display: none;
+    }
+}

@@ -1,0 +1,95 @@
+#constructor-standings-container {
+    color: var(--font-color);
+    border-radius: 0.5rem;
+    padding: 1vh;
+	margin-top: 6vh !important;
+	margin-bottom: 2vh !important;
+
+    h2 {
+        margin: 0;
+    }
+}
+
+.standings-main {
+    flex-direction: column;
+    width: 90%;
+
+    #standings-headings {
+        align-items: center;
+        border-bottom: 2px solid var(--race-red);
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        h4 {
+            margin: 0;
+        }
+    }
+
+    .constructorStanding {
+        justify-content: space-between;
+        margin: 0.5vh;
+    
+        #result-position {
+            text-align: right;
+            margin: auto;
+        }
+        #result-nationality {
+            text-align: right;
+            margin: auto;
+        }
+        #result-constructor {
+            text-align: left;
+            margin: auto;
+        }
+        #result-wins {
+            text-align: right;
+            margin: auto;
+        }
+        #result-points {
+            text-align: right;
+            margin: auto;
+        }
+    }
+}
+
+
+#full-standings-btn {
+    background-color: var(--font-color);
+    border: none;
+	color: var(--bg-color);
+    margin: auto;
+    margin-top: 1vh;
+    width: 100%;
+    font-weight: bolder;
+}
+
+
+
+
+@media (max-width: 1023px) {
+    .row.constructorStanding {
+        justify-content: space-evenly;
+        margin: 1vh;
+
+        #result-position {
+            font-size: 3vw;
+        }
+        #result-nationality {
+            display: none;
+        }
+        #result-constructor {
+            font-size: 3vw;
+        }
+        #result-wins {
+            font-size: 3vw;
+        }
+        #result-points {
+            font-size: 3vw;
+        }
+    }
+
+    #driver-standings-container {
+        h2 {
+            margin: 1vmax;
+        }
+    }
+}

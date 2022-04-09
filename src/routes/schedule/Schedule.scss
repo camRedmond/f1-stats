@@ -1,0 +1,59 @@
+.schedule-main {
+    margin: auto;
+    padding: 1vh;
+    width: 80%;
+}
+
+.card.race-main {
+    margin: 2vh 1vw;
+    padding: 1vh;
+    border-radius: 0.35rem;
+    font-size: 1rem;
+    background-color: var(--container-color);
+    border: none;
+
+    #info {
+        max-height: 2em;
+
+        p#numberCircle {
+            width: 2em;
+            line-height: 2em;
+            border-radius: 50%;
+            background-color: var(--bg-color);
+            color: var(--race-red);
+            font-weight: 900;
+        }
+    }
+
+    #content {
+        margin: auto;
+
+        h4, p {
+            margin: 0;
+        }
+    }
+    
+    #track-image{
+        img {
+            margin: 0;
+            width: auto;
+        }
+    }
+}
+
+
+.hidden-div {
+    z-index: -1;
+    display: none;
+    background-color: var(--secondary-color);
+    width: 90%;
+    color: var(--bg-color);
+    margin: auto;
+    position: relative;
+    top: -2vh;
+
+    padding: 1vh;
+    border-radius: 0 0 0.35em 0.35em;
+
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+}

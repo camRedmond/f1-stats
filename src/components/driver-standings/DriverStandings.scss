@@ -1,0 +1,117 @@
+#driver-standings-container {
+    color: var(--font-color);
+    border-radius: 0.5rem;
+    padding: 1vh;
+	margin-top: 6vh !important;
+	margin-bottom: 2vh !important;
+
+    h2 {
+        margin: 0;
+    }
+}
+
+.standings-main {
+    flex-direction: column;
+    width: 90%;
+
+    #standings-headings {
+        align-items: center;
+        border-bottom: 2px solid var(--race-red);
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        h4 {
+            margin: 0;
+        }
+    }
+
+    .driverStanding {
+        justify-content: space-between;
+        margin: 0.5vh;
+    
+        #result-position {
+            text-align: right;
+            margin: auto;
+        }
+        #result-driver-number {
+            text-align: right;
+            margin: auto;
+        }
+        #result-driver-name {
+            text-align: left;
+            margin: auto;
+        }
+        #result-constructor {
+            text-align: left;
+            margin: auto;
+            color: var(--font-color);
+        }
+        #result-wins {
+            text-align: right;
+            margin: auto;
+        }
+        #result-points {
+            text-align: right;
+            margin: auto;
+        }
+    }
+}
+
+
+#full-standings-btn {
+    background-color: var(--font-color);
+    border: none;
+	color: var(--bg-color);
+    margin: auto;
+    margin-top: 1vh;
+    width: 100%;
+    font-weight: bolder;
+}
+
+
+
+@media (max-width: 1023px) {
+    .row.driverStanding {
+        justify-content: space-evenly;
+        margin: 1vh;
+
+        #result-position {
+            font-size: 3vw;
+        }
+        #result-driver-number {
+            display: none;
+        }
+        #result-driver-name {
+            font-size: 3vw;
+            margin: auto;
+            padding: 0 1vw;
+        }
+        #result-constructor {
+            font-size: 3vw;
+            margin: auto;
+            text-align: center;
+        }
+        #result-wins {
+            display: none;
+        }
+        #result-points {
+            font-size: 3vw;
+        }
+    }
+
+    #driver-standings-container {
+        h2 {
+            margin: 1vmax;
+        }
+    }
+}
+
+@media (min-width: 1023px) {
+    .row.driverStanding {
+        #result-position {
+            border: none !important;
+        }
+        #result-driver-name {
+            border: none !important;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.nav-tabs {
+    border-bottom: none;
+    .nav-item {
+        .nav-link {
+            color: var(--race-red);
+        }
+        .nav-link:hover {
+            border: 1px solid var(--bg-color);
+        }
+        .nav-link.active {
+            background-color: var(--container-color);
+            color: var(--font-color);
+            border: 1px solid var(--bg-color);
+            border-bottom: 1px solid var(--container-color);
+            box-shadow: 0 -1rem 3rem rgba(0,0,0,.175);
+        }
+    }
+}
+
+
+.standings {
+    table {
+        #headings {
+            border-bottom: none !important;
+        }
+    }
+}
+.tab-pane {
+    background-color: var(--container-color);
+    border-radius: 0 0 1vh 1vh;
+}
+
+.tab-content {
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+    border-radius: 0 0 1vh 1vh;
+}

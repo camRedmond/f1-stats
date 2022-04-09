@@ -1,0 +1,85 @@
+img {
+    margin: 1vh;
+}
+
+#next-race-container {
+    color: var(--font-color);
+    border-radius: 0.5rem;
+    padding: 1vh;
+
+	margin-top: 2vh !important;
+	margin-bottom: 2vh !important;
+
+    h2 {
+        margin: 0;
+    }
+}
+
+#next-race-card {
+    background-color: inherit;
+    border-radius: 0 0.55rem 0 0;
+    border-bottom: none;
+    border-left: none;
+    border-width: 0.4rem;
+    border-color: var(--race-red);
+    padding: 1vh;
+}
+
+#next-track-image {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#countdown-container {
+    padding-top: 1vmin;
+}
+
+#full-schedule-btn {
+    background-color: var(--font-color);
+    border: none;
+	color: var(--bg-color);
+    margin: auto;
+    margin-top: 1vh;
+    width: 100%;
+    font-weight: bolder;
+}
+
+#quali-container {
+	h6 {
+		margin: 0;
+		font-size: larger;
+	}
+	#race-day-week {
+		margin: 0 0.5vw;
+		text-transform: uppercase;
+	}
+	#race-time {
+		color: var(--bg-color);
+		padding: 2px 6px;
+		background-color: var(--race-red);
+		border-radius: 0.2vw;
+		font-weight: bold;
+	}
+	#info {
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+	.practice {
+		margin: 1vh 1vw;
+		align-items: center;
+
+		justify-content: space-between;
+		
+		h5 {
+			margin: 0;
+		}
+	}
+}
+
+
+@media (max-width: 1100px) {
+	#quali-container {
+		display: none;
+	}
+}

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,300;0,400;0,700;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,600;0,800;1,500;1,800;1,900&family=Quicksand:wght@300;500;700&display=swap');
+
+
+:root, [data-theme="dark"] {
+    --bg-color: #181818;
+    --primary-color: #242526;
+    --secondary-color: #b0b3b8;
+    --font-color: #e4e6eb;
+    --race-red: #e10600;
+    --container-color: #4d4d4b;
+
+    --ferrari: #DC0000;
+    --haas: #fff;
+    --red_bull: #0600EF;
+    --mercedes: #00D2BE;
+    --alpine: #0090FF;
+    --alfa: 	#900000;
+    --mclaren: #FF8700;
+    --alphatauri: #2B4562;
+    --aston_martin: #006F62;
+    --williams: #005AFF;
+}
+
+[data-theme="light"] {
+    --bg-color: #FAF9F6;
+    --primary-color: #A7BBC7;
+    --secondary-color: #303030;
+    --font-color: #181818;
+    --race-red: #e10600;
+    --container-color: #f8f7f5;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Quicksand', 'Montserrat', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    margin: 0;
+
+    transition: background-color 500ms ease-in-out, color 1s ease-in-out;
+}
