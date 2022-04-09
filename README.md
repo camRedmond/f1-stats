@@ -31,7 +31,7 @@ You will also see any lint errors in the console.
 
 ### `"npm run build": "react-scripts build"`,
 
-Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes. Your app will be ready to deploy!
+Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
 
 ### `"npm run test": "react-scripts test"`,
 
