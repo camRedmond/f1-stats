@@ -18,11 +18,11 @@
 
 ![Home Page Light](/f1-stats-main-light.png "Home Page Light")
 
-![Last Race Results](/f1-stats-results "Last Race Results")
+![Last Race Results](/f1-stats-results.png "Last Race Results")
 
-![Schedule Page Dark](/f1-stats-schedule-dark "Schedule Page Dark")
+![Schedule Page Dark](/f1-stats-schedule-dark.png "Schedule Page Dark")
 
-![Schedule Page Light](/f1-stats-schedule-light "Schedule Page Light")
+![Schedule Page Light](/f1-stats-schedule-light.png "Schedule Page Light")
 
 ## Available Commands
 
