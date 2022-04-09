@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+<h1 align="center">F1Stats</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">F1Stats is a free and mobile friendly application which provides F1 race standings and results from the public Ergast F1 API</p>
 
-## Available Scripts
+## Links
+
+- [Repo](https://github.com/camRedmond/f1-stats "F1Stats Repo")
+
+- [Live](https://camredmond.github.io/f1-stats "Live View")
+
+- [Bugs](https://github.com/camRedmond/F1Stats/issues "Issues Page")
+
+- [API](http://ergast.com/mrd/ "Ergast F1 API")
+
+## Screenshots
+
+<!-- ![Home Page](/screenshots/1.png "Home Page")
+
+![](/screenshots/2.png)
+
+![](/screenshots/3.png) -->
+
+## Available Commands
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm start" : "react-scripts start"`,
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The app is built using `create-react-app` so this command Runs the app in Development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser. You also need to run the server file as well to completely run the app. The page will reload if you make edits.
+You will also see any lint errors in the console.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### `"npm run build": "react-scripts build"`,
 
-### `npm test`
+Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `"npm run test": "react-scripts test"`,
 
-### `npm run build`
+Launches the test runner in the interactive watch mode.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Built With
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- JavaScript
+- React
+- Axios
+- Bootstrap
+- React Router
+- Sass
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Future Updates
 
-### `npm run eject`
+- [ ] Archive of previous race seasons
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Author
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Cameron Redmond**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- [Profile](https://github.com/camRedmond "Cameron Redmond")
+- [Email](mailto:cam.redmond@protonmail.com)
+- [Website](https://camredmond.com "Website!")
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🤝 Support
 
-## Learn More
+Contributions, issues, and feature requests are welcome!
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Give a ⭐️ if you like this project!
