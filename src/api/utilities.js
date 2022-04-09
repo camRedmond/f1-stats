@@ -6,7 +6,7 @@ var config = {
 };
 
 export async function getCurrentDriverStandings() {
-    const resp = await axios.get('http://ergast.com/api/f1/current/driverStandings.json', config)
+    const resp = await axios.get('https://ergast.com/api/f1/current/driverStandings.json', config)
     return resp.data.MRData.StandingsTable.StandingsLists[0]
 }
 
