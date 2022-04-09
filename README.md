@@ -14,11 +14,15 @@
 
 ## Screenshots
 
-<!-- ![Home Page](/screenshots/1.png "Home Page")
+![Home Page Dark](/f1-stats-main-dark.png "Home Page Dark")
 
-![](/screenshots/2.png)
+![Home Page Light](/f1-stats-main-light.png "Home Page Light")
 
-![](/screenshots/3.png) -->
+![Last Race Results](/f1-stats-results "Last Race Results")
+
+![Schedule Page Dark](/f1-stats-schedule-dark "Schedule Page Dark")
+
+![Schedule Page Light](/f1-stats-schedule-light "Schedule Page Light")
 
 ## Available Commands
 
