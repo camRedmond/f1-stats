@@ -8,14 +8,14 @@ const DriverStandings = () => {
     const [loaded, setloaded] = useState(false)
 
     useEffect(() => {
-        if (JSON.parse(localStorage.getItem('driverStandingsInfo'))) {
-            setdata(JSON.parse(localStorage.getItem('driverStandingsInfo')))
+        if (JSON.parse(sessionStorage.getItem('driverStandingsInfo'))) {
+            setdata(JSON.parse(sessionStorage.getItem('driverStandingsInfo')))
             setloaded(true)
         } else {
             async function getData() {
             let response = await getCurrentDriverStandings()
             setdata(response)
-            localStorage.setItem('driverStandingsInfo', JSON.stringify(response))
+            sessionStorage.setItem('driverStandingsInfo', JSON.stringify(response))
             setloaded(true)
             }
             getData()
@@ -68,8 +68,8 @@ const DriverStandings = () => {
                         </div>
                     </>
                     :
-                    <div class="box">
-                        <div class="loader" />
+                    <div className="box">
+                        <div className="loader" />
                     </div>
                 }
             </div>

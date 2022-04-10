@@ -10,9 +10,9 @@ function Standings( {active} ) {
     const [loaded, setloaded] = useState(false);
 
     useEffect(() => {
-        if (JSON.parse(localStorage.getItem("driverStandingsInfo")) && JSON.parse(localStorage.getItem("constructorStandingsInfo"))) {
-            setdriver(JSON.parse(localStorage.getItem("driverStandingsInfo")));
-            setconstructor(JSON.parse(localStorage.getItem("constructorStandingsInfo")));
+        if (JSON.parse(sessionStorage.getItem("driverStandingsInfo")) && JSON.parse(sessionStorage.getItem("constructorStandingsInfo"))) {
+            setdriver(JSON.parse(sessionStorage.getItem("driverStandingsInfo")));
+            setconstructor(JSON.parse(sessionStorage.getItem("constructorStandingsInfo")));
             setloaded(true);
         } else {
             async function getData() {
@@ -20,8 +20,8 @@ function Standings( {active} ) {
                 let cs = await getCurrentConstructorStandings();
                 setdriver(ds);
                 setconstructor(cs);
-                localStorage.setItem("driverStandingsInfo", JSON.stringify(ds));
-                localStorage.setItem("constructorStandingsInfo", JSON.stringify(cs));
+                sessionStorage.setItem("driverStandingsInfo", JSON.stringify(ds));
+                sessionStorage.setItem("constructorStandingsInfo", JSON.stringify(cs));
                 setloaded(true);
             }
             getData();
@@ -38,7 +38,7 @@ function Standings( {active} ) {
                             <Tabs defaultActiveKey={active} id="tabb">
                                 <Tab eventKey="driver" title="Driver Standings">
                                     <div className='driver standings table-responsive d-flex m-auto'>
-                                        <table class="table align-middle">
+                                        <table className="table align-middle">
                                             <thead>
                                                 <tr id='headings'>
                                                     <td>Pos</td>
@@ -79,7 +79,7 @@ function Standings( {active} ) {
                                 </Tab>
                                 <Tab eventKey="constructor" title="Constructor Standings">
                                     <div className='constructor standings table-responsive d-flex m-auto'>
-                                        <table class="table align-middle">
+                                        <table className="table align-middle">
                                             <thead>
                                                 <tr id='headings'>
                                                     <td>Pos</td>
@@ -118,8 +118,8 @@ function Standings( {active} ) {
                         </>
                         :
                         <>
-                            <div class="box">
-                                <div class="loader" />
+                            <div className="box">
+                                <div className="loader" />
                             </div>
                         </>
                     }

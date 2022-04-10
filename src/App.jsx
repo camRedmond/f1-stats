@@ -10,8 +10,8 @@ import Schedule from './routes/schedule/Schedule';
 import Standings from './routes/standings/Standings';
 
 function App() {
-    const [theme, setTheme] = useState(localStorage.getItem('storedTheme') ? localStorage.getItem('storedTheme') : "dark");
-    localStorage.setItem('storedTheme', theme)
+    const [theme, setTheme] = useState(sessionStorage.getItem('storedTheme') ? sessionStorage.getItem('storedTheme') : "dark");
+    sessionStorage.setItem('storedTheme', theme)
     document.documentElement.setAttribute("data-theme", theme);
 
 
@@ -36,7 +36,7 @@ function App() {
             </svg>`
         }
         document.documentElement.setAttribute("data-theme", newTheme);
-        localStorage.setItem("storedTheme", newTheme)
+        sessionStorage.setItem("storedTheme", newTheme)
         setTheme(newTheme);
     }
 

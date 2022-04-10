@@ -8,14 +8,14 @@ const ConstructorStandings = () => {
     const [loaded, setloaded] = useState(false)
 
     useEffect(() => {
-        if (JSON.parse(localStorage.getItem('constructorStandingsInfo'))) {
-            setdata(JSON.parse(localStorage.getItem('constructorStandingsInfo')))
+        if (JSON.parse(sessionStorage.getItem('constructorStandingsInfo'))) {
+            setdata(JSON.parse(sessionStorage.getItem('constructorStandingsInfo')))
             setloaded(true)
         } else {
             async function getData() {
                 let response = await getCurrentConstructorStandings()
                 setdata(response)
-                localStorage.setItem('constructorStandingsInfo', JSON.stringify(response))
+                sessionStorage.setItem('constructorStandingsInfo', JSON.stringify(response))
                 setloaded(true)
             }
             getData()
@@ -64,8 +64,8 @@ const ConstructorStandings = () => {
                         </div>
                     </>
                     :
-                    <div class="box">
-                        <div class="loader"></div>
+                    <div className="box">
+                        <div className="loader"></div>
                     </div>
                 }
             </div>

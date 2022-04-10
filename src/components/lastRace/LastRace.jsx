@@ -25,8 +25,8 @@ const LastRace = () => {
                         <h2>Last Round Results</h2>
                         <h5>{data.raceName}</h5>
                         <h6>{data.date}</h6>
-                        <div class="table-responsive d-flex m-auto">
-                            <table class="table align-middle">
+                        <div className="table-responsive d-flex m-auto">
+                            <table className="table align-middle">
                                 <thead>
                                     <tr id='headings'>
                                         <td>Pos</td>
@@ -80,8 +80,8 @@ const LastRace = () => {
                         </div>
                     </>
                     :
-                    <div class="box">
-                        <div class="loader"></div>
+                    <div className="box">
+                        <div className="loader"></div>
                     </div>
                 }
             </div>

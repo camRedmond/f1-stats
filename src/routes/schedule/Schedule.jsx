@@ -9,16 +9,16 @@ function Schedule() {
     const [loaded, setloaded] = useState(false)
 
     useEffect(() => {
-        if (JSON.parse(localStorage.getItem("allRoundsInfo")) && JSON.parse(localStorage.getItem("allResultsInfo"))) {
-            setdata([JSON.parse(localStorage.getItem("allRoundsInfo")), JSON.parse(localStorage.getItem("allResultsInfo"))])
+        if (JSON.parse(sessionStorage.getItem("allRoundsInfo")) && JSON.parse(sessionStorage.getItem("allResultsInfo"))) {
+            setdata([JSON.parse(sessionStorage.getItem("allRoundsInfo")), JSON.parse(sessionStorage.getItem("allResultsInfo"))])
             setloaded(true)
         } else {
             async function getData() {
                 let response = await getAllRoundInfo()
                 let response2 = await getAllResults()
                 setdata([response, response2])
-                localStorage.setItem("allRoundsInfo", JSON.stringify(response))
-                localStorage.setItem("allResultsInfo", JSON.stringify(response2))
+                sessionStorage.setItem("allRoundsInfo", JSON.stringify(response))
+                sessionStorage.setItem("allResultsInfo", JSON.stringify(response2))
                 setloaded(true)
             }
             getData()
@@ -87,8 +87,8 @@ function Schedule() {
                                     
                                             </Col>
                                             <svg id={"openArrow-"+race.Circuit.circuitId} width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M15.5 7L12 10.5L8.5 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M15.5 13L12 16.5L8.5 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M15.5 7L12 10.5L8.5 7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                                <path d="M15.5 13L12 16.5L8.5 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                                             </svg>
                                         </Row>
                                     </div>
@@ -161,8 +161,8 @@ function Schedule() {
                     :
                     <>
                         <h1> F1 Schedule</h1>
-                        <div class="box">
-                        <div class="loader" />
+                        <div className="box">
+                            <div className="loader" />
                         </div>
                     </>
                     }

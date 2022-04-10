@@ -9,14 +9,14 @@ const NextRace = () => {
     const [loaded, setloaded] = useState(false)
 
     useEffect(() => {
-        if (JSON.parse(localStorage.getItem('nextRoundInfo'))) {
-            setnextRace(JSON.parse(localStorage.getItem('nextRoundInfo')))
+        if (JSON.parse(sessionStorage.getItem('nextRoundInfo'))) {
+            setnextRace(JSON.parse(sessionStorage.getItem('nextRoundInfo')))
             setloaded(true)
         } else {
             async function getData() {
                 let response = await getNextRoundInfo()
                 setnextRace(response)
-                localStorage.setItem('nextRoundInfo', JSON.stringify(response))
+                sessionStorage.setItem('nextRoundInfo', JSON.stringify(response))
                 setloaded(true)
             }
             getData()
@@ -94,8 +94,8 @@ const NextRace = () => {
                             </Link>
                         </>
                         :
-                        <div class="box">
-                            <div class="loader"></div>
+                        <div className="box">
+                            <div className="loader"></div>
                         </div>
                     }
                 </div>
