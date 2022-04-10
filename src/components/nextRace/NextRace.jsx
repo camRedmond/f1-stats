@@ -59,11 +59,23 @@ const NextRace = () => {
                                             <h6 id='race-day-week'>{days[new Date(nextRace.SecondPractice.date).getDay()]}</h6>
                                             <h6 id='race-time'>{convertTime(nextRace.SecondPractice.date +"T"+ nextRace.SecondPractice.time)}</h6>
                                         </div>
-                                        <div className='practice d-flex' id='practice-3'>
-                                            <h6 id='info'>Practice 3</h6>
-                                            <h6 id='race-day-week'>{days[new Date(nextRace.ThirdPractice.date).getDay()]}</h6>
-                                            <h6 id='race-time'>{convertTime(nextRace.ThirdPractice.date +"T"+ nextRace.ThirdPractice.time)}</h6>
-                                        </div>
+                                        {nextRace.hasOwnProperty("ThirdPractice") ? 
+                                            <>
+                                                <div className='practice d-flex' id='practice-3'>
+                                                    <h6 id='info'>Practice 3</h6>
+                                                    <h6 id='race-day-week'>{days[new Date(nextRace.ThirdPractice.date).getDay()]}</h6>
+                                                    <h6 id='race-time'>{convertTime(nextRace.ThirdPractice.date +"T"+ nextRace.ThirdPractice.time)}</h6>
+                                                </div>
+                                            </>
+                                            :
+                                            <>
+                                                <div className='practice d-flex' id='sprint'>
+                                                    <h6 id='info'>Sprint</h6>
+                                                    <h6 id='race-day-week'>{days[new Date(nextRace.Sprint.date).getDay()]}</h6>
+                                                    <h6 id='race-time'>{convertTime(nextRace.Sprint.date +"T"+ nextRace.Sprint.time)}</h6>
+                                                </div>
+                                            </>
+                                        }
                                         <div className='practice d-flex' id='qualifying'>
                                             <h6 id='info'>Qualifying</h6>
                                             <h6 id='race-day-week'>{days[new Date(nextRace.Qualifying.date).getDay()]}</h6>

@@ -93,7 +93,8 @@ function Schedule() {
                                         </Row>
                                     </div>
                                     <div className="hidden-div" id={race.Circuit.circuitId} style={{ display: "none" }}>
-                                        {convertTime(race.date + "T" + race.time) < new Date() ? (
+                                        {data[1].Races[(parseInt(race.round)-1)] ? (
+                                        // {convertTime(race.date + "T" + race.time) < new Date() ? (
                                         <>
                                             <h5>Results</h5>
                                             {data[1].Races[(parseInt(race.round)-1)].Results.filter((result, indx) => indx < 3).map(
