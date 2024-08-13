@@ -4,13 +4,13 @@
 
 ## Links
 
-- [Repo](https://github.com/camRedmond/f1-stats "F1Stats Repo")
+- [Repo](https://github.com/camRedmond/f1-stats)
 
-- [Live](https://camredmond.github.io/f1-stats "Live View")
+- [Live](https://camredmond.github.io/f1-stats/)
 
-- [Bugs](https://github.com/camRedmond/F1Stats/issues "Issues Page")
+- [Bugs](https://github.com/camRedmond/f1-stats/issues)
 
-- [API](http://ergast.com/mrd/ "Ergast F1 API")
+- [API](http://ergast.com/mrd/)
 
 ## Screenshots
 
