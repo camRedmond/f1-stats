@@ -24,22 +24,6 @@
 
 ![Schedule Page Light](/f1-stats-schedule-light.png "Schedule Page Light")
 
-## Available Commands
-
-In the project directory, you can run:
-
-### `npm start" : "react-scripts start"`,
-
-The app is built using `create-react-app` so this command Runs the app in Development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser. The page will reload if you make edits and you will also see any lint errors in the console.
-
-### `"npm run build": "react-scripts build"`,
-
-Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
-
-### `"npm run test": "react-scripts test"`,
-
-Launches the test runner in the interactive watch mode.
-
 ## Built With
 
 - JavaScript
@@ -57,9 +41,9 @@ Launches the test runner in the interactive watch mode.
 
 **Cameron Redmond**
 
-- [Profile](https://github.com/camRedmond "Cameron Redmond")
+- [Profile](https://github.com/camRedmond)
 - [Email](mailto:cam.redmond@protonmail.com)
-- [Website](https://camredmond.com "Website!")
+- [Website](https://camredmond.com)
 
 ## 🤝 Support
 
